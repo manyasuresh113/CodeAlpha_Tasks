@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GlassCalc Pro | CodeAlpha</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Background -->
+
+    <div class="background-circle circle1"></div>
+    <div class="background-circle circle2"></div>
+
+    <!-- Calculator -->
+
+    <div class="calculator-container">
+
+        <div class="calculator">
+
+            <!-- ===================== -->
+            <!-- TOP BAR -->
+            <!-- ===================== -->
+
+            <div class="top-bar">
+
+                <h2>
+                    <i class="fa-solid fa-calculator"></i>
+                    GlassCalc Pro
+                </h2>
+
+                <div class="top-actions">
+
+                    <select id="theme-select">
+
+                        <option value="default">🔵 Blue</option>
+                        <option value="purple">🟣 Purple</option>
+                        <option value="green">🟢 Emerald</option>
+                        <option value="orange">🟠 Sunset</option>
+
+                    </select>
+
+                    <button id="copy-btn" title="Copy Result">
+
+                        <i class="fa-regular fa-copy"></i>
+
+                    </button>
+
+                    <button id="theme-toggle" title="Toggle Theme">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- ===================== -->
+            <!-- DISPLAY -->
+            <!-- ===================== -->
+
+            <div class="display-box">
+
+                <div id="expression"></div>
+
+                <input
+                    type="text"
+                    id="display"
+                    value="0"
+                    readonly>
+
+            </div>
+
+            <!-- ===================== -->
+            <!-- BUTTONS -->
+            <!-- ===================== -->
+
+            <div class="buttons">
+
+                <button class="clear">AC</button>
+                <button class="delete">DEL</button>
+                <button class="operator">%</button>
+                <button class="operator">÷</button>
+
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button class="operator">×</button>
+
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button class="operator">−</button>
+
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button class="operator">+</button>
+
+                <button class="zero">0</button>
+                <button>.</button>
+                <button class="equal">=</button>
+
+            </div>
+
+        </div>
+
+        <!-- ===================== -->
+        <!-- HISTORY -->
+        <!-- ===================== -->
+
+        <div class="history-panel">
+
+            <div class="history-header">
+
+                <h3>
+
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+
+                    History
+
+                </h3>
+
+                <button id="clear-history">
+
+                    <i class="fa-solid fa-trash"></i>
+
+                    Clear
+
+                </button>
+
+            </div>
+
+            <ul id="history-list">
+
+                <li>No calculations yet.</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- ===================== -->
+    <!-- TOAST -->
+    <!-- ===================== -->
+
+    <div id="toast">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        Copied Successfully
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
