@@ -1,0 +1,504 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#050505;
+    color:white;
+    position:relative;
+}
+
+/* ===========================
+   AURORA BACKGROUND
+=========================== */
+
+.gradient-bg{
+
+    position:absolute;
+    inset:0;
+
+    background:
+        radial-gradient(circle at top left,#1DB95455,transparent 40%),
+        radial-gradient(circle at top right,#00C2FF44,transparent 40%),
+        radial-gradient(circle at bottom left,#9D4EDD55,transparent 35%),
+        radial-gradient(circle at bottom right,#FF3CAC44,transparent 35%),
+        #050505;
+
+    filter:blur(90px);
+
+    animation:aurora 14s linear infinite alternate;
+
+    z-index:-3;
+
+}
+
+@keyframes aurora{
+
+    0%{
+
+        transform:scale(1) rotate(0deg);
+
+    }
+
+    100%{
+
+        transform:scale(1.25) rotate(15deg);
+
+    }
+
+}
+
+/* ===========================
+   PARTICLES
+=========================== */
+
+.particles{
+
+    position:absolute;
+    inset:0;
+
+    overflow:hidden;
+
+}
+
+.particles span{
+
+    position:absolute;
+
+    display:block;
+
+    width:8px;
+    height:8px;
+
+    border-radius:50%;
+
+    background:white;
+
+    opacity:.15;
+
+    animation:float 12s linear infinite;
+
+}
+
+.particles span:nth-child(1){
+
+left:8%;
+top:80%;
+animation-duration:14s;
+
+}
+
+.particles span:nth-child(2){
+
+left:20%;
+top:60%;
+animation-duration:9s;
+
+}
+
+.particles span:nth-child(3){
+
+left:40%;
+top:90%;
+animation-duration:15s;
+
+}
+
+.particles span:nth-child(4){
+
+left:70%;
+top:70%;
+animation-duration:12s;
+
+}
+
+.particles span:nth-child(5){
+
+left:88%;
+top:85%;
+animation-duration:11s;
+
+}
+
+.particles span:nth-child(6){
+
+left:55%;
+top:95%;
+animation-duration:13s;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0) scale(.4);
+
+opacity:0;
+
+}
+
+50%{
+
+opacity:.25;
+
+}
+
+100%{
+
+transform:translateY(-120vh) scale(1.4);
+
+opacity:0;
+
+}
+
+}
+
+/* ===========================
+   SPLASH CARD
+=========================== */
+
+.splash-container{
+
+    width:430px;
+
+    padding:45px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+
+        0 15px 50px rgba(0,0,0,.5),
+
+        inset 0 0 25px rgba(255,255,255,.05);
+
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo{
+
+    width:160px;
+
+    animation:
+
+        logoFloat 4s ease-in-out infinite,
+
+        glow 3s ease-in-out infinite;
+
+}
+
+@keyframes logoFloat{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+}
+
+@keyframes glow{
+
+0%,100%{
+
+filter:
+
+drop-shadow(0 0 5px #1DB954)
+
+drop-shadow(0 0 15px #9D4EDD);
+
+}
+
+50%{
+
+filter:
+
+drop-shadow(0 0 25px #00C2FF)
+
+drop-shadow(0 0 50px #FF3CAC);
+
+}
+
+}
+
+/* ===========================
+   TEXT
+=========================== */
+
+.app-name{
+
+    font-size:48px;
+
+    margin-top:15px;
+
+    letter-spacing:1px;
+
+    font-weight:700;
+
+}
+
+.tagline{
+
+    margin-top:10px;
+
+    letter-spacing:4px;
+
+    color:#bdbdbd;
+
+    font-size:13px;
+
+}
+
+/* ===========================
+   EQUALIZER
+=========================== */
+
+.equalizer{
+
+display:flex;
+
+justify-content:center;
+
+align-items:flex-end;
+
+gap:8px;
+
+margin:35px 0;
+
+height:60px;
+
+}
+
+.equalizer span{
+
+width:10px;
+
+border-radius:20px;
+
+background:linear-gradient(
+
+180deg,
+
+#1DB954,
+
+#00C2FF,
+
+#9D4EDD,
+
+#FF3CAC
+
+);
+
+animation:equalizer 1.2s infinite;
+
+}
+
+.equalizer span:nth-child(1){
+
+animation-delay:.1s;
+
+}
+
+.equalizer span:nth-child(2){
+
+animation-delay:.3s;
+
+}
+
+.equalizer span:nth-child(3){
+
+animation-delay:.6s;
+
+}
+
+.equalizer span:nth-child(4){
+
+animation-delay:.2s;
+
+}
+
+.equalizer span:nth-child(5){
+
+animation-delay:.5s;
+
+}
+
+@keyframes equalizer{
+
+0%{
+
+height:15px;
+
+}
+
+50%{
+
+height:55px;
+
+}
+
+100%{
+
+height:18px;
+
+}
+
+}
+
+/* ===========================
+   LOADING TEXT
+=========================== */
+
+.loading-text{
+
+font-size:14px;
+
+letter-spacing:2px;
+
+color:#d5d5d5;
+
+margin-bottom:20px;
+
+}
+
+/* ===========================
+   PROGRESS BAR
+=========================== */
+
+.progress{
+
+width:100%;
+
+height:8px;
+
+background:#1b1b1b;
+
+border-radius:30px;
+
+overflow:hidden;
+
+}
+
+.progress-fill{
+
+width:0;
+
+height:100%;
+
+border-radius:30px;
+
+background:linear-gradient(
+
+90deg,
+
+#1DB954,
+
+#00C2FF,
+
+#9D4EDD,
+
+#FF3CAC
+
+);
+
+animation:loading 3s linear forwards;
+
+}
+
+@keyframes loading{
+
+0%{
+
+width:0;
+
+}
+
+100%{
+
+width:100%;
+
+}
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+position:absolute;
+
+bottom:25px;
+
+font-size:13px;
+
+letter-spacing:2px;
+
+color:#999;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.splash-container{
+
+width:90%;
+
+padding:35px;
+
+}
+
+.logo{
+
+width:130px;
+
+}
+
+.app-name{
+
+font-size:38px;
+
+}
+
+}
+
+body{
+
+    transition:opacity .8s ease;
+
+}
