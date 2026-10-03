@@ -168,6 +168,20 @@ Some of the dashboard insights include:
 - Hiring activity varies across different months and years.
 - Historical hiring activity can be used to estimate future hiring requirements.
 
-├── HR_Analytics.pbix
-├── HRDataset_v14.csv
-└── README.md
+---
+
+🎯 Internship Task
+
+Internship: CodeAlpha Power BI Internship
+Task: Human Resources Analytics
+The project focuses on using Power BI to analyze HR data and create an interactive dashboard covering recruitment, turnover, employee satisfaction, performance, and hiring requirements.
+
+---
+
+#👩‍💻Author
+
+Manya Suresh
+BCA Student
+Power BI Intern at CodeAlpha
+
+
